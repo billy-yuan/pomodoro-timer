@@ -1,38 +1,77 @@
+body {
+  background-color: bisque;
+}
+
 .App {
   text-align: center;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.timerContainer {
+  margin-left: 20%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-padding {
+  height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.time-left {
+  font-size: 35mm;
+}
+
+.start-stop-button,
+.skip-button {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: none;
+  font-size: 7mm;
+  margin: 10px;
+  cursor: pointer;
+  background-color: grey;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.time-label {
+  font-size: 10mm;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-button {
+  background-color: transparent;
+  border: none;
+  font-size: 10mm;
+  cursor: pointer;
+}
+
+.timer-modal {
+  width: 50%; /* Full width */
+  height: 50%; /* Full height */
+  position: fixed; /* Stay in place */
+  z-index: 1;
+  overflow: auto; /* Enable scroll if needed */
+  left: 10%;
+  top: 10%;
+  padding-top: 100px; /* Location of the box */
+  background-color: rgba(255, 255, 255, 0.98); /* Fallback color */
+}
+
+.settings-container {
+  width: 50%;
+  margin-left: 30%;
+}
+.session-input,
+.break-input {
+  font-size: 10mm;
+  width: 50%;
+}
+
+.close-modal {
+  cursor: pointer;
+  font-size: 10mm;
 }
